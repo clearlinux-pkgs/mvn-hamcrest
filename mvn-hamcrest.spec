@@ -4,7 +4,7 @@
 #
 Name     : mvn-hamcrest
 Version  : 1.3
-Release  : 5
+Release  : 6
 URL      : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
 Source0  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
 Source1  : https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
