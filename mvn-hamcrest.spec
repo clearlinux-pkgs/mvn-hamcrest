@@ -4,7 +4,7 @@
 #
 Name     : mvn-hamcrest
 Version  : 1.3
-Release  : 6
+Release  : 7
 URL      : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
 Source0  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
 Source1  : https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
@@ -14,7 +14,11 @@ Source4  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-all/1.3/hamcrest
 Source5  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
 Source6  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
 Source7  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
-Source8  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+Source8  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.jar
+Source9  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.pom
+Source10  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+Source11  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar
+Source12  : https://repo1.maven.org/maven2/org/hamcrest/hamcrest/2.1/hamcrest-2.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -61,8 +65,20 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-c
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/1.3
 cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/2.1
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/2.1
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-parent/1.3
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest/2.1
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest/2.1
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.pom
 
 
 %files
@@ -76,6 +92,10 @@ cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/hamcrest/hamcrest-p
 /usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
 /usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
 /usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+/usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.jar
+/usr/share/java/.m2/repository/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.pom
 /usr/share/java/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
 /usr/share/java/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
 /usr/share/java/.m2/repository/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+/usr/share/java/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar
+/usr/share/java/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.pom
